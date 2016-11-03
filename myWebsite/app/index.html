@@ -1,0 +1,51 @@
+<!doctype html> 
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Jinouk, Lee">
+    <meta name="author" content="Jinouk Lee">
+    <title>Lee, Jin Ouk</title>
+    
+    <!-- Style --> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+    
+    <!-- Libraries --> 
+    <script src="/libraries/jquery/dist/jquery.min.js"></script>
+    <script src="/libraries/angular/angular.min.js"></script>
+    <script src="/libraries/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/libraries/angular-ui-router-styles/ui-router-styles.js"></script>
+
+
+    <!-- JS files --> 
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <!-- main page -->
+    <div id="main-page" ng-controller="mainController">
+      <!-- left -->
+      <div id="main-left">
+        <div id="namecard">
+          <div id="name">
+          <span id="first-name">Jinouk</span>
+          <span id="last-name">Lee<span>
+          </div>
+          <hr align="right" width="100%">
+          <div id="occupation">
+            <span>Software Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- left -->
+      <div id="main-right">
+        <div id="menu-container">
+          <div id="about" class="menu-list" ng-click="about()">About</div>
+          <div id="projects" class="menu-list" ng-click="project()">Projects</div>
+          <div id="contact" class="menu-list" ng-click="contact()">Contacts</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
